@@ -8,6 +8,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<Home />} />
+        <Route path="/contact" element={<Home />} />
+        <Route path="/art" element={<Home />} />
+        <Route path="/blog" element={<Home />} />
       </Routes>
     </Router>
   );
