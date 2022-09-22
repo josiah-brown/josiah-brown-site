@@ -7,6 +7,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/*======== CUSTOM UTILITY CLASSES ========*/
+
+/* Sets the object height to 100% of the visible screenspace */
+/* This is useful on mobile where the search bar in the browser is in the way */
 .adjusted_max_h {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);

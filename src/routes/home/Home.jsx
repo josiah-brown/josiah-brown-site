@@ -9,7 +9,7 @@ const Home = () => {
     <PageContainer>
       <AboutSnippet />
       <Nav />
-      <div id="art-container" className=" absolute w-full h-screen -z-10">
+      <div id="art-container" className=" absolute w-full adjusted_max_h -z-10">
         <HeroSketch parent={"art-container"} />
       </div>
     </PageContainer>

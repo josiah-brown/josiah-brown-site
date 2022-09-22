@@ -18,7 +18,6 @@ const HeroSketch = ({ parent }) => {
     p.createCanvas(w, h, p.WEBGL).parent(parent);
 
     // Update variables that depend on view dimensions
-    console.log(w);
     if (w * 2 < 800) {
       R = w / 5;
       MAX_NOISE_R = w / 2;
@@ -44,14 +43,19 @@ const HeroSketch = ({ parent }) => {
   const draw = (p) => {
     p.background(BG);
     p.stroke(STROKE);
-    p.noFill();
-    //p.orbitControl();
+    // p.orbitControl();
     drawPoints(points, p);
   };
 
+  const windowResized = (p) => {
+    w = document.getElementById(parent).offsetWidth;
+    h = document.getElementById(parent).offsetHeight;
+    p.resizeCanvas(w, h);
+  };
+
   const mouseClicked = (e) => {
-    // if (e.mouseY < 600 && e.mouseY > 200) {
-    timeStopped = !timeStopped;
+    // // if (e.mouseY < 600 && e.mouseY > 200) {
+    // timeStopped = !timeStopped;
     // }
   };
 
@@ -63,11 +67,13 @@ const HeroSketch = ({ parent }) => {
       p.vertex(point.x + noiseV.x, point.y + noiseV.y, point.z + noiseV.z);
     });
     p.endShape();
+
     t = !timeStopped ? t + STEP : t;
   }
 
   function setHRFactor(time, p) {
-    //HRFactor = pow(sin(time), 63) * sin(time + 1.5) * sin(time - 1.2) * 8;
+    // HRFactor =
+    //   p.pow(p.sin(time), 63) * p.sin(time + 1.5) * p.sin(time - 1.2) * 8;
     HRFactor = p.sin(time / 2);
   }
 
@@ -96,6 +102,7 @@ const HeroSketch = ({ parent }) => {
     <Sketch
       setup={setup}
       draw={draw}
+      windowResized={windowResized}
       mouseClicked={(e) => {
         mouseClicked(e);
       }}
