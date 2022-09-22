@@ -1,21 +1,23 @@
 import React from "react";
 import Sketch from "react-p5";
+import { themes } from "../data/themeSetup.js";
 
 const HeroSketch = ({ parent }) => {
   const STEP = 0.005;
-  const BG = 255;
-  const STROKE = 0;
 
   let points;
   let t = 0;
-  let timeStopped = false;
   let HRFactor = 0;
+  let BG = 255;
+  let STROKE = 0;
   let R, MAX_NOISE_R, GRID_WIDTH, w, h;
 
   const setup = (p) => {
     w = document.getElementById(parent).offsetWidth;
     h = document.getElementById(parent).offsetHeight;
     p.createCanvas(w, h, p.WEBGL).parent(parent);
+    p.frameRate(60);
+    updateColors();
 
     // Update variables that depend on view dimensions
     if (w * 2 < 800) {
@@ -41,22 +43,37 @@ const HeroSketch = ({ parent }) => {
   };
 
   const draw = (p) => {
+    updateColors();
     p.background(BG);
     p.stroke(STROKE);
-    // p.orbitControl();
     drawPoints(points, p);
+  };
+
+  const updateColors = () => {
+    const dark = window.document.documentElement.classList.contains("dark");
+    if (dark && BG === themes.dark.bg) {
+      return;
+    }
+    if (!dark && BG !== themes.dark.bg) {
+      return;
+    }
+    if (dark) {
+      BG = themes.dark.bg;
+      STROKE = themes.dark.main;
+    } else {
+      BG = themes.light.bg;
+      STROKE = themes.light.main;
+    }
+  };
+
+  const mouseClicked = (p) => {
+    // toggleStroke();
   };
 
   const windowResized = (p) => {
     w = document.getElementById(parent).offsetWidth;
     h = document.getElementById(parent).offsetHeight;
     p.resizeCanvas(w, h);
-  };
-
-  const mouseClicked = (e) => {
-    // // if (e.mouseY < 600 && e.mouseY > 200) {
-    // timeStopped = !timeStopped;
-    // }
   };
 
   function drawPoints(pArray, p) {
@@ -68,13 +85,11 @@ const HeroSketch = ({ parent }) => {
     });
     p.endShape();
 
-    t = !timeStopped ? t + STEP : t;
+    t = t + STEP;
   }
 
   function setHRFactor(time, p) {
-    // HRFactor =
-    //   p.pow(p.sin(time), 63) * p.sin(time + 1.5) * p.sin(time - 1.2) * 8;
-    HRFactor = p.sin(time / 2);
+    HRFactor = p.sin(time);
   }
 
   function createNoiseVector(point, p) {
@@ -103,9 +118,7 @@ const HeroSketch = ({ parent }) => {
       setup={setup}
       draw={draw}
       windowResized={windowResized}
-      mouseClicked={(e) => {
-        mouseClicked(e);
-      }}
+      mouseClicked={mouseClicked}
     />
   );
 };

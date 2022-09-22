@@ -4,15 +4,17 @@ import Projects from "./routes/projects/Projects";
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<Home />} />
-        <Route path="/contact" element={<Home />} />
-        <Route path="/art" element={<Home />} />
-        <Route path="/blog" element={<Home />} />
-      </Routes>
-    </Router>
+    <div className="-z-50 bg-white dark:bg-neutral-800">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<Home />} />
+          <Route path="/contact" element={<Home />} />
+          <Route path="/art" element={<Home />} />
+          <Route path="/blog" element={<Home />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }

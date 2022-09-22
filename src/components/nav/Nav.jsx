@@ -17,7 +17,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="absolute flex flex-col right-0 bottom-8 md:bottom-20 items-end text-base md:text-2xl gap-2 md:gap-4 font-extralight">
+    <nav className="absolute z-50 flex flex-col right-0 bottom-8 md:bottom-20 items-end text-base md:text-2xl gap-2 md:gap-4 font-extralight text-black dark:text-white">
       <Link to={"/"}>Home</Link>
       <Link to={"/projects"}>Projects</Link>
       <Link to={"/about"}>About</Link>
