@@ -17,7 +17,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
-.ssl-bundle.zip
+
+ssl-bundle.zip
 
 npm-debug.log*
 yarn-debug.log*
