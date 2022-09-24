@@ -66,9 +66,7 @@ const HeroSketch = ({ parent }) => {
     }
   };
 
-  const mouseClicked = (p) => {
-    // toggleStroke();
-  };
+  const mouseClicked = (p) => {};
 
   const windowResized = (p) => {
     w = document.getElementById(parent).offsetWidth;
