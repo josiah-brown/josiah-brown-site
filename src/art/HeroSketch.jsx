@@ -16,19 +16,28 @@ const HeroSketch = ({ parent }) => {
     w = document.getElementById(parent).offsetWidth;
     h = document.getElementById(parent).offsetHeight;
     p.createCanvas(w, h, p.WEBGL).parent(parent);
-    p.frameRate(60);
+    p.frameRate(30);
     updateColors();
 
     // Update variables that depend on view dimensions
-    if (w * 2 < 800) {
-      R = w / 5;
+    if (w < 500) {
+      R = w / 6;
       MAX_NOISE_R = w / 2;
       GRID_WIDTH = 60;
+    } else if (w < 800) {
+      R = w / 6;
+      MAX_NOISE_R = w / 3;
+      GRID_WIDTH = 80;
+    } else if (w < 1200) {
+      R = w / 10;
+      MAX_NOISE_R = w / 3;
+      GRID_WIDTH = 80;
     } else {
       R = w / 12;
-      MAX_NOISE_R = w / 7;
+      MAX_NOISE_R = w / 5;
       GRID_WIDTH = 120;
     }
+
     points = new Array(GRID_WIDTH * GRID_WIDTH).fill();
 
     // Fill the points array with 3D vectors
@@ -83,7 +92,7 @@ const HeroSketch = ({ parent }) => {
     });
     p.endShape();
 
-    t = t + STEP;
+    t = t + 1.7 * STEP;
   }
 
   function setHRFactor(time, p) {

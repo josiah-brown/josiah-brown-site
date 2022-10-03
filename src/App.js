@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/home/Home";
 import Projects from "./routes/projects/Projects";
+import About from "./routes/about/About";
 import Error404 from "./routes/error_404/Error404";
 
 export default function App() {
@@ -10,7 +11,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<Error404 />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Error404 />} />
           <Route path="/art" element={<Error404 />} />
           <Route path="/blog" element={<Error404 />} />

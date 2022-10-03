@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches about snippet snapshot 1 1`] = `
+<div
+  className="absolute z-50 left-0 top-6 flex flex-col md:top-12 text-black dark:text-white"
+  data-testid="about-snippet"
+>
+  <h1
+    className="text-2xl font-semibold w-1/2 md:text-5xl"
+  >
+    No Heading...
+  </h1>
+  <h3
+    className="text-sm font-extralight w-1/2 md:text-xl"
+  >
+    snapshot 1
+  </h3>
+</div>
+`;
+
+exports[`matches about snippet snapshot 2 1`] = `
+<div
+  className="absolute z-50 left-0 top-6 flex flex-col md:top-12 text-black dark:text-white"
+  data-testid="about-snippet"
+>
+  <h1
+    className="text-2xl font-semibold w-1/2 md:text-5xl"
+  >
+    blah blah blah
+  </h1>
+  <h3
+    className="text-sm font-extralight w-1/2 md:text-xl"
+  >
+    No Content...
+  </h3>
+</div>
+`;
