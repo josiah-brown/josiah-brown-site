@@ -2,6 +2,9 @@
 import IMG1 from "../assets/project-1.png";
 import IMG1_LG from "../assets/project-1-lg.png";
 import IMG2 from "../assets/project-2.png";
+import IMG2_LG from "../assets/project-2-lg.png";
+import IMG3 from "../assets/project-3.png";
+import IMG3_LG from "../assets/project-3-lg.png";
 
 // IMPORT LOGOS
 import { FaReact } from "react-icons/fa";
@@ -24,7 +27,7 @@ export const projects = [
     link: "https://panthercityleather.com",
     infoUrl: "/projects/panther-city-leather",
     github: "https://github.com/josiah-brown/panther-city-leather",
-    skills: ["Full-Stack Development", "UI/UX"],
+    skills: ["Full-Stack Web", "Commerce.js", "Stripe.js", "Formik"],
     overview: [
       "A custom leather goods ecommerce site built with ReactJS, Commerce.js, and hosted on Netlify. ",
     ],
@@ -41,68 +44,60 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Movies.me",
-    link: "https://www.google.com",
-    infoUrl: "/projects/movies-me",
-    github: "https://github.com/josiah-brown/panther-city-leather",
-    skills: ["API Integration", "Sorting"],
+    title: "Portfolio Site",
+    link: "https://josiahbrown.com",
+    infoUrl: "/projects/portfolio",
+    github: "https://github.com/josiah-brown/josiah-brown-site",
+    skills: ["Full-Stack Web", "Tailwind", "Jest", "P5.js", "Figma"],
     overview: [
-      "A custom leather goods ecommerce site built with ReactJS, Commerce.js, and hosted on Netlify.",
+      "A minimalist portfolio site brought to life with generative art and subtle animations. Built with ReactJS, Tailwind, P5.js, and hosted on Netlify.",
     ],
     process: [
-      "This is the first full site I built with ReactJS. The learning curve was steep but by the end of the project, I felt very comfortable using components, managing state, and implementing React hooks.",
+      "Okay, maybe it is slightly redundant to list this site within itself, but this is one of my larger projects and I learned so much while building it.",
+      "After completing my first website using SCSS, I'd had enough. It was time for an upgrade. I quickly found Tailwind and spent a day learning the framework. It made implementing dark theme much easier and I haven't looked back yet.",
+      "I implemented testing on this site using React Testing Library and Jest. The tests are primarily unit and snapshot tests though I hope to add more as my knowledge in this area grows.",
+      "Lastly, this website's animation on the home page was built using P5.js. This is a sample of my generative art and more can be viewed on my Instagram.",
     ],
     photo: IMG2,
-    photo_lg: IMG1_LG,
+    photo_lg: IMG2_LG,
   },
   {
     id: 3,
-    title: "Portfolio Site",
-    link: "https://www.google.com",
-    infoUrl: "/projects/portfolio",
-    github: "https://github.com/josiah-brown/panther-city-leather",
-    skills: ["Full-Stack Development", "UI/UX Design"],
+    title: "Diploma Generator App",
+    link: "",
+    infoUrl: "/projects/certificate-generator",
+    github: "https://github.com/josiah-brown/diploma-app",
+    skills: ["Desktop App", "Python", "PyPDF4"],
     overview: [
-      "A custom leather goods ecommerce site built with ReactJS, Commerce.js, and hosted on Netlify.",
+      "A desktop application that generates PDF certificates and diplomas based on values entered by the user. Coded in Python and bundled with PyInstaller",
     ],
     process: [
-      "This is the first full site I built with ReactJS. The learning curve was steep but by the end of the project, I felt very comfortable using components, managing state, and implementing React hooks.",
+      "From 2021-2022 I worked for an NGO in Southeast Asia that conducted trainings for around 100-200 students per session. Upon graduation, each student was given a diploma to certify their completion of the course.",
+      "When I arrived, staff was manually typing in names and dates for each diploma which was extremely tedious.",
+      "I decided to develop a simple desktop app that generates these diplomas from a .txt or .xlsx file containing a list of names. The user is also able to specify dates, titles, and download location for the PDF generated.",
     ],
-    photo: IMG2,
-    photo_lg: IMG1_LG,
+    photo: IMG3,
+    photo_lg: IMG3_LG,
   },
   {
     id: 4,
-    title: "Certificate Generator",
-    link: "https://www.google.com",
-    infoUrl: "/projects/certificate-generator",
-    github: "https://github.com/josiah-brown/panther-city-leather",
-    skills: ["Python", "Desktop Application"],
+    title: "Mobile Cipher App",
+    link: "",
+    infoUrl: "/projects/cipher-app",
+    github: "",
+    skills: ["Mobile App", "Python", "Encryption"],
     overview: [
-      "A custom leather goods ecommerce site built with ReactJS, Commerce.js, and hosted on Netlify.",
+      "An android mobile app that uses an advanced version of the Caesar Cipher to encrypt messages.",
     ],
     process: [
-      "This is the first full site I built with ReactJS. The learning curve was steep but by the end of the project, I felt very comfortable using components, managing state, and implementing React hooks.",
+      "From 2021-2022 I worked for an NGO in Southeast Asia that conducted trainings for ethnic minorities resisting an oppressive government.",
+      "One of the skills we taught was secure correspondence which was basically message encryption 101.",
+      "When I learned that the students were encrypting by hand on paper, I decided to make a simple encryption app. The app takes a user message as well as some key variables and can either encrypt or decrypt. Nothing is stored locally to avoid the risk of unintended message recovery.",
+      "The app was built with Python, bundled using BeeWare, and used a custom encryption algorithm based upon multiple salted rounds of the Caesar Cipher. Due to the nature of this project, I am unable to the share code.",
     ],
     photo: "/assets/project-1-img.png",
     photo_lg: IMG1_LG,
   },
-  // {
-  //   id: 5,
-  //   title: "Certificate Generator",
-  //   link: "https://www.google.com",
-  //   infoUrl: "/projects/panther-city-leather",
-  //   skills: ["Python", "Desktop Application"],
-  //   photo: "/assets/project-1-img.png",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Certificate Generator",
-  //   link: "https://www.google.com",
-  //   infoUrl: "/projects/panther-city-leather",
-  //   skills: ["Python", "Desktop Application"],
-  //   photo: "/assets/project-1-img.png",
-  // },
 ];
 
 export const meta = {
@@ -114,7 +109,7 @@ export const meta = {
 export const about = {
   text: [
     "Hello. My name is Josiah Brown and I am a front-end web developer.",
-    "Only after obtaining a degree in Electrical and Computer Engineering did I realized that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess engine, a mobile cipher app for Burmese refugees, and of course, web development.",
+    "Only after obtaining a degree in Electrical and Computer Engineering did I realized that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess engine, a mobile cipher app for rebels in Southeast Asia, and of course, web development.",
     "I love to learn. When I am not scouring stack overflow for solutions to bugs, you will likely find me playing Spikeball, traveling the world, or watching Fresh Prince of Bel Air. Checkout my resume or reach out to me via the contact page if you would like to connect!",
   ],
   logos: [

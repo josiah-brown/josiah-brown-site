@@ -6,6 +6,7 @@ import AboutSnippet from "../../components/about_snippet/AboutSnippet";
 import { meta } from "../../data/siteContent";
 import { projects } from "../../data/siteContent";
 import ProjectList from "../../components/project_list/ProjectList";
+// import ProjectsSketch from "../../art/ProjectsSketch";
 
 const Projects = () => {
   return (
@@ -13,6 +14,12 @@ const Projects = () => {
       <AboutSnippet heading={meta.title} content={meta.content} />
       <ToggleThemeBtn />
       <Nav />
+      {/* <div
+        id="art-container-2"
+        className=" absolute w-full adjusted_max_h bg-none"
+      >
+        <ProjectsSketch parent={"art-container-2"} />
+      </div> */}
       <div
         id="projects_container"
         className="flex flex-col fixed left-5 md:left-20 lg:left-28 xl:left-40 bottom-8 md:bottom-20 w-full h-[66%] md:h-[60%] dark:text-white"

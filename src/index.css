@@ -7,11 +7,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-#about_content::-webkit-scrollbar {
+#about_content::-webkit-scrollbar,
+#project_content::-webkit-scrollbar {
   display: none;
 }
 
-#about_content {
+#about_content,
+#project_content {
   scrollbar-width: none;
 }
 

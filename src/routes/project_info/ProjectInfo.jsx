@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import PageContainer from "../../components/page_container/PageContainer";
 import ToggleThemeBtn from "../../components/toggle_theme_btn/ToggleThemeBtn";
 import AboutSnippet from "../../components/about_snippet/AboutSnippet";
+import Footer from "../../components/footer/Footer";
 import { meta, projects } from "../../data/siteContent";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
@@ -29,7 +30,10 @@ const ProjectInfo = () => {
           {"0" + currProject.id + ". "}
           <span className="font-semibold">{currProject.title}</span>
         </h2>
-        <div className="h-[92%] flex flex-col items-center space-y-6 lg:space-y-12 overflow-y-scroll">
+        <div
+          id="project_content"
+          className="h-[92%] flex flex-col items-center space-y-6 lg:space-y-12 overflow-y-scroll"
+        >
           <div className="relative border-[1px] border-black dark:border-white">
             {window.innerWidth < 1280 ? (
               <img src={currProject.photo} />
@@ -38,24 +42,28 @@ const ProjectInfo = () => {
             )}
           </div>
           <div className="flex space-x-8 lg:space-x-16 w-fit">
-            <a
-              href={currProject.github}
-              target="_blank"
-              rel="noreferrer"
-              className="z-50 border-2 border-black dark:border-white md:hover:bg-black md:hover:text-white dark:md:hover:bg-white dark:md:hover:text-neutral-800 py-2 px-10 text-2xl lg:text-4xl text-center cursor-pointer"
-            >
-              <FaGithub className="inline" />
-            </a>
-            <a
-              href={currProject.link}
-              target="_blank"
-              rel="noreferrer"
-              className="z-50 border-2 border-black dark:border-white md:hover:bg-black md:hover:text-white dark:md:hover:bg-white dark:md:hover:text-neutral-800 py-2 px-10 text-2xl lg:text-4xl text-center cursor-pointer"
-            >
-              <HiOutlineExternalLink className="inline" />
-            </a>
+            {currProject.github !== "" ? (
+              <a
+                href={currProject.github}
+                target="_blank"
+                rel="noreferrer"
+                className="z-50 border-2 border-black dark:border-white md:hover:bg-black md:hover:text-white dark:md:hover:bg-white dark:md:hover:text-neutral-800 py-2 px-10 text-2xl lg:text-4xl text-center cursor-pointer"
+              >
+                <FaGithub className="inline" />
+              </a>
+            ) : null}
+            {currProject.link !== "" ? (
+              <a
+                href={currProject.link}
+                target="_blank"
+                rel="noreferrer"
+                className="z-50 border-2 border-black dark:border-white md:hover:bg-black md:hover:text-white dark:md:hover:bg-white dark:md:hover:text-neutral-800 py-2 px-10 text-2xl lg:text-4xl text-center cursor-pointer"
+              >
+                <HiOutlineExternalLink className="inline" />
+              </a>
+            ) : null}
           </div>
-          <div className="overview space-y-4 lg:space-y-6 w-full">
+          <div className="overview space-y-4 lg:space-y-6 w-full lg:w-3/4 2xl:w-1/2">
             <h3 className="text-xl md:text-2xl lg:text-4xl font-semibold w-1/2 md:w-1/3 border-black dark:border-white border-b-2 border-r-2">
               Overview
             </h3>
@@ -70,7 +78,7 @@ const ProjectInfo = () => {
               );
             })}
           </div>
-          <div className="process space-y-4 lg:space-y-6 w-full">
+          <div className="process space-y-4 lg:space-y-6 w-full lg:w-3/4 2xl:w-1/2">
             <h3 className="text-xl md:text-2xl lg:text-4xl font-semibold w-1/2 md:w-1/3 border-black dark:border-white border-b-2 border-r-2">
               Process
             </h3>
@@ -85,6 +93,7 @@ const ProjectInfo = () => {
               );
             })}
           </div>
+          <Footer />
         </div>
       </div>
     </PageContainer>
