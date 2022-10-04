@@ -7,6 +7,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+#about_content::-webkit-scrollbar {
+  display: none;
+}
+
+#about_content {
+  scrollbar-width: none;
+}
+
 /*======== CUSTOM UTILITY CLASSES ========*/
 
 /* Sets the object height to 100% of the visible screenspace */

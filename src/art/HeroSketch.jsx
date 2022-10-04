@@ -35,7 +35,7 @@ const HeroSketch = ({ parent }) => {
     } else {
       R = w / 12;
       MAX_NOISE_R = w / 5;
-      GRID_WIDTH = 120;
+      GRID_WIDTH = 100;
     }
 
     points = new Array(GRID_WIDTH * GRID_WIDTH).fill();
@@ -74,8 +74,6 @@ const HeroSketch = ({ parent }) => {
       STROKE = themes.light.main;
     }
   };
-
-  const mouseClicked = (p) => {};
 
   const windowResized = (p) => {
     w = document.getElementById(parent).offsetWidth;
@@ -120,14 +118,7 @@ const HeroSketch = ({ parent }) => {
     );
   }
 
-  return (
-    <Sketch
-      setup={setup}
-      draw={draw}
-      windowResized={windowResized}
-      mouseClicked={mouseClicked}
-    />
-  );
+  return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
 };
 
 export default HeroSketch;

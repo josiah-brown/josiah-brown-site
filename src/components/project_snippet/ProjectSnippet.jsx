@@ -37,7 +37,7 @@ const ProjectSnippet = ({ project }) => {
       onPointerEnter={showImg}
       onPointerLeave={hideImg}
     >
-      <a href={p.link} className="" target="_blank" rel="noreferrer">
+      <a href={p.infoUrl}>
         <h3 className="font-semibold text-xs md:text-sm lg:text-xl xl:text-2xl">
           {"0" + p.id + "."}
         </h3>

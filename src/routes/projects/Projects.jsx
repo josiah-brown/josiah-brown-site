@@ -15,7 +15,7 @@ const Projects = () => {
       <Nav />
       <div
         id="projects_container"
-        className="flex flex-col fixed left-5 md:left-28 bottom-8 md:bottom-20 w-full h-[66%] md:h-[60%] dark:text-white"
+        className="flex flex-col fixed left-5 md:left-20 lg:left-28 xl:left-40 bottom-8 md:bottom-20 w-full h-[66%] md:h-[60%] dark:text-white"
       >
         <h1 className="font-semibold text-2xl md:text-4xl lg:text-5xl xl:text-6xl tracking-wide w-1/2 md:w-2/5 xl:w-2/5 border-black dark:border-white border-r-2 border-b-2 mb-2 xl:mb-6">
           PROJECTS
