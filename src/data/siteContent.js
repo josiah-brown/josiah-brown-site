@@ -5,6 +5,8 @@ import IMG2 from "../assets/project-2.png";
 import IMG2_LG from "../assets/project-2-lg.png";
 import IMG3 from "../assets/project-3.png";
 import IMG3_LG from "../assets/project-3-lg.png";
+import IMG4 from "../assets/project-4.jpg";
+import IMG4_LG from "../assets/project-4-lg.jpg";
 
 // IMPORT LOGOS
 import { FaReact } from "react-icons/fa";
@@ -95,8 +97,8 @@ export const projects = [
       "When I learned that the students were encrypting by hand on paper, I decided to make a simple encryption app. The app takes a user message as well as some key variables and can either encrypt or decrypt. Nothing is stored locally to avoid the risk of unintended message recovery.",
       "The app was built with Python, bundled using BeeWare, and used a custom encryption algorithm based upon multiple salted rounds of the Caesar Cipher. Due to the nature of this project, I am unable to the share code.",
     ],
-    photo: "/assets/project-1-img.png",
-    photo_lg: IMG1_LG,
+    photo: IMG4,
+    photo_lg: IMG4_LG,
   },
 ];
 
