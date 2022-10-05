@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches page container snapshot 1 1`] = `
+<div
+  className="relative adjusted_max_h bg-white dark:bg-neutral-800"
+  data-testid="page-container"
+>
+  <div>
+    <p>
+      child 1
+    </p>
+    <p>
+      child 2
+    </p>
+  </div>
+</div>
+`;

@@ -36,8 +36,9 @@ const ProjectSnippet = ({ project }) => {
       className="flex flex-col items-start border-black dark:border-white border-l-2 pl-2 group w-fit hover:cursor-pointer"
       onPointerEnter={showImg}
       onPointerLeave={hideImg}
+      data-testid={"project-snippet-" + p.id}
     >
-      <a href={p.infoUrl}>
+      <a href={p.infoUrl} data-testid="project-snippet-anchor">
         <h3 className="font-semibold text-xs md:text-sm lg:text-xl xl:text-2xl">
           {"0" + p.id + "."}
         </h3>

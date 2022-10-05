@@ -2,13 +2,18 @@
 
 exports[`matches about snippet snapshot 1 1`] = `
 <div
-  className="absolute z-50 left-0 top-6 flex flex-col md:top-12 text-black dark:text-white"
+  className="fixed z-50 left-5 md:left-20 lg:left-28 xl:left-40 top-6 flex flex-col md:top-12 text-black dark:text-white"
   data-testid="about-snippet"
 >
   <h1
-    className="text-2xl font-semibold w-1/2 md:text-5xl"
+    className="text-2xl font-semibold w-full md:text-5xl"
   >
-    No Heading...
+    <a
+      className="cursor-pointer"
+      href="/"
+    >
+      No Heading...
+    </a>
   </h1>
   <h3
     className="text-sm font-extralight w-1/2 md:text-xl"
@@ -20,13 +25,18 @@ exports[`matches about snippet snapshot 1 1`] = `
 
 exports[`matches about snippet snapshot 2 1`] = `
 <div
-  className="absolute z-50 left-0 top-6 flex flex-col md:top-12 text-black dark:text-white"
+  className="fixed z-50 left-5 md:left-20 lg:left-28 xl:left-40 top-6 flex flex-col md:top-12 text-black dark:text-white"
   data-testid="about-snippet"
 >
   <h1
-    className="text-2xl font-semibold w-1/2 md:text-5xl"
+    className="text-2xl font-semibold w-full md:text-5xl"
   >
-    blah blah blah
+    <a
+      className="cursor-pointer"
+      href="/"
+    >
+      blah blah blah
+    </a>
   </h1>
   <h3
     className="text-sm font-extralight w-1/2 md:text-xl"

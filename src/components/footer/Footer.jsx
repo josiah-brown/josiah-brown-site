@@ -17,6 +17,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           className="md:w-8 md:h-8"
+          data-testid="footer-link-1"
         >
           <AiFillLinkedin className="text-lg md:text-3xl dark:text-white md:w-8 md:h-8 md:hover:text-neutral-500" />
         </a>
@@ -25,6 +26,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           className="md:w-8 md:h-8"
+          data-testid="footer-link-2"
         >
           <AiFillGithub className="text-lg md:text-3xl dark:text-white md:w-8 md:h-8 md:hover:text-neutral-500" />
         </a>
@@ -33,11 +35,14 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           className="md:w-8 md:h-8"
+          data-testid="footer-link-3"
         >
           <AiFillInstagram className="text-lg md:text-3xl dark:text-white md:w-8 md:h-8 md:hover:text-neutral-500" />
         </a>
       </div>
-      <p className="text-xs font-extralight">© Josiah Brown {year}</p>
+      <p className="text-xs font-extralight" data-testid="footer-copyright">
+        © Josiah Brown {year}
+      </p>
     </div>
   );
 };

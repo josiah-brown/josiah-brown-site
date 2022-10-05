@@ -14,6 +14,7 @@ const ToggleTheme = () => {
     <button
       type="button"
       onClick={handleToggle}
+      data-testid="toggle-theme-btn"
       className="absolute z-50 top-8 border-[1px] border-black dark:border-white w-10 h-5 right-5 md:right-20 lg:right-28 xl:right-40 md:top-12 "
     >
       <div className="relative w-full h-full">

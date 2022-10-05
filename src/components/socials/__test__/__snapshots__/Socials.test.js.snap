@@ -2,12 +2,12 @@
 
 exports[`matches snapshot 1`] = `
 <div
-  className="absolute z-50 left-0 bottom-8 md:bottom-20 flex flex-col space-y-4 md:space-y-6"
+  className="absolute z-50 left-5 md:left-20 lg:left-28 xl:left-40 bottom-8 md:bottom-20 flex flex-col space-y-4 md:space-y-6"
   data-testid="socials"
 >
   <a
     className="md:w-8 md:h-8 group overflow-hidden relative"
-    href="https://google.com"
+    href="https://www.linkedin.com/in/josiah-brown99/"
     rel="noreferrer"
     target="_blank"
   >
@@ -45,7 +45,7 @@ exports[`matches snapshot 1`] = `
   </a>
   <a
     className="md:w-8 md:h-8 group overflow-hidden relative"
-    href="https://google.com"
+    href="https://github.com/josiah-brown"
     rel="noreferrer"
     target="_blank"
   >
@@ -83,7 +83,7 @@ exports[`matches snapshot 1`] = `
   </a>
   <a
     className="md:w-8 md:h-8 group overflow-hidden relative"
-    href="https://google.com"
+    href="https://www.instagram.com/eclipse_generative_art/"
     rel="noreferrer"
     target="_blank"
   >
