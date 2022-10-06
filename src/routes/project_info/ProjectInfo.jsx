@@ -36,9 +36,9 @@ const ProjectInfo = () => {
         >
           <div className="relative border-[1px] border-black dark:border-white">
             {window.innerWidth < 1280 ? (
-              <img src={currProject.photo} />
+              <img src={currProject.photo} alt="project preview" />
             ) : (
-              <img src={currProject.photo_lg} />
+              <img src={currProject.photo_lg} alt="project preview" />
             )}
           </div>
           <div className="flex space-x-8 lg:space-x-16 w-fit">
