@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef } from "react";
 import { useEffect } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -6,28 +7,28 @@ const ProjectSnippet = ({ project }) => {
   const p = project;
 
   let attached = false;
-  let imgContainer = null;
+  let imgContainer = useRef(null);
 
   useEffect(() => {
-    imgContainer = document.querySelector("#img-" + p.id);
-  }, []);
+    imgContainer.current = document.querySelector("#img-" + p.id);
+  }, [p.id]);
 
   const followMouse = (e) => {
-    imgContainer.style.left = e.x + 200 + "px";
-    imgContainer.style.top = e.y - 100 + "px";
+    imgContainer.current.style.left = e.x + 200 + "px";
+    imgContainer.current.style.top = e.y - 100 + "px";
   };
 
   const showImg = () => {
     if (!attached) {
       attached = true;
-      imgContainer.style.visibility = "visible";
+      imgContainer.current.style.visibility = "visible";
       document.addEventListener("pointermove", followMouse);
     }
   };
 
   const hideImg = () => {
     attached = false;
-    imgContainer.style.visibility = "hidden";
+    imgContainer.current.style.visibility = "hidden";
     document.removeEventListener("pointermove", followMouse);
   };
 
@@ -57,7 +58,7 @@ const ProjectSnippet = ({ project }) => {
         id={"img-" + p.id}
         className="fixed invisible w-[200px] border-black dark:border-white border-2 pointer-events-none"
       >
-        <img src={p.photo} />
+        <img src={p.photo} alt="project preview" />
       </div>
     </div>
   );
