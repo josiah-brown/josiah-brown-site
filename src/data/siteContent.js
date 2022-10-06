@@ -69,7 +69,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "The Libary Loft",
+    title: "The Library Loft",
     link: "https://thelibraryloft.com",
     infoUrl: "/projects/the-libary-loft",
     github: "",

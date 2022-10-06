@@ -36,8 +36,8 @@ const ProjectSnippet = ({ project }) => {
   return (
     <div
       className="flex flex-col items-start border-black dark:border-white border-l-2 pl-2 group w-fit hover:cursor-pointer"
-      onPointerEnter={showImg}
-      onPointerLeave={hideImg}
+      onPointerEnter={window.innerWidth >= 768 ? showImg : null}
+      onPointerLeave={window.innerWidth >= 768 ? hideImg : null}
       data-testid={"project-snippet-" + p.id}
     >
       <Link to={p.infoUrl} data-testid="project-snippet-anchor">
