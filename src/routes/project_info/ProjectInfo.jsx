@@ -12,7 +12,7 @@ const ProjectInfo = () => {
   const params = useParams();
   let currProject;
   projects.forEach((p) => {
-    if (p.infoUrl.includes(params.projectTitle)) {
+    if (p.infoUrl.includes(params.project)) {
       currProject = p;
     }
   });

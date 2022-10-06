@@ -2,6 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const ProjectSnippet = ({ project }) => {
   const p = project;
@@ -39,7 +40,7 @@ const ProjectSnippet = ({ project }) => {
       onPointerLeave={hideImg}
       data-testid={"project-snippet-" + p.id}
     >
-      <a href={p.infoUrl} data-testid="project-snippet-anchor">
+      <Link to={p.infoUrl} data-testid="project-snippet-anchor">
         <h3 className="font-semibold text-xs md:text-sm lg:text-xl xl:text-2xl">
           {"0" + p.id + "."}
         </h3>
@@ -53,7 +54,7 @@ const ProjectSnippet = ({ project }) => {
         <p className="font-light text-xs md:text-sm lg:text-base xl:text-lg">
           {p.skills.join(", ")}
         </p>
-      </a>
+      </Link>
       <div
         id={"img-" + p.id}
         className="fixed invisible w-[200px] border-black dark:border-white border-2 pointer-events-none"
