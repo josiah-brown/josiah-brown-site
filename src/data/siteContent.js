@@ -5,8 +5,12 @@ import IMG2 from "../assets/project-2.png";
 import IMG2_LG from "../assets/project-2-lg.png";
 import IMG3 from "../assets/project-3.png";
 import IMG3_LG from "../assets/project-3-lg.png";
-import IMG4 from "../assets/project-4.jpg";
-import IMG4_LG from "../assets/project-4-lg.jpg";
+import IMG4 from "../assets/project-4.png";
+import IMG4_LG from "../assets/project-4-lg.png";
+import IMG5 from "../assets/project-5.jpg";
+import IMG5_LG from "../assets/project-5-lg.jpg";
+import IMG6 from "../assets/project-6.png";
+import IMG6_LG from "../assets/project-6-lg.png";
 
 // IMPORT LOGOS
 import { FaReact } from "react-icons/fa";
@@ -65,6 +69,21 @@ export const projects = [
   },
   {
     id: 3,
+    title: "The Libary Loft",
+    link: "https://thelibraryloft.com",
+    infoUrl: "/projects/the-libary-loft",
+    github: "",
+    skills: ["WordPress", "Design", "Domain Management", "SEO"],
+    overview: ["A WordPress blog built for a family member."],
+    process: [
+      "Though React apps are more fun, a family member needed a quick site built so I decided I might as well learn WordPress.",
+      "I am waiting on content for the site and also learning SEO to increase search rankings. This is very much still a work in progess.",
+    ],
+    photo: IMG3,
+    photo_lg: IMG3_LG,
+  },
+  {
+    id: 4,
     title: "Diploma Generator App",
     link: "",
     infoUrl: "/projects/certificate-generator",
@@ -78,11 +97,11 @@ export const projects = [
       "When I arrived, staff was manually typing in names and dates for each diploma which was extremely tedious.",
       "I decided to develop a simple desktop app that generates these diplomas from a .txt or .xlsx file containing a list of names. The user is also able to specify dates, titles, and download location for the PDF generated.",
     ],
-    photo: IMG3,
-    photo_lg: IMG3_LG,
+    photo: IMG4,
+    photo_lg: IMG4_LG,
   },
   {
-    id: 4,
+    id: 5,
     title: "Mobile Cipher App",
     link: "",
     infoUrl: "/projects/cipher-app",
@@ -97,8 +116,23 @@ export const projects = [
       "When I learned that the students were encrypting by hand on paper, I decided to make a simple encryption app. The app takes a user message as well as some key variables and can either encrypt or decrypt. Nothing is stored locally to avoid the risk of unintended message recovery.",
       "The app was built with Python, bundled using BeeWare, and used a custom encryption algorithm based upon multiple salted rounds of the Caesar Cipher. Due to the nature of this project, I am unable to the share code.",
     ],
-    photo: IMG4,
-    photo_lg: IMG4_LG,
+    photo: IMG5,
+    photo_lg: IMG5_LG,
+  },
+  {
+    id: 6,
+    title: "Desktop Chess App",
+    link: "",
+    infoUrl: "/projects/chess-app",
+    github: "https://github.com/josiah-brown/chess",
+    skills: ["Desktop App", "Python", "Tkinter", "Pygame"],
+    overview: ["A simple chess app built with Pygame and Tkinter."],
+    process: [
+      "I built this project to test my Python skills and I made a point not to view/use anyone else's chess code. That turned out to be a challenge.",
+      "Sadly, the app never reached completion (I wanted to add an engine) but the game logic, timers, and move previews were all implemented before I moved on to something else.",
+    ],
+    photo: IMG6,
+    photo_lg: IMG6_LG,
   },
 ];
 
@@ -111,8 +145,8 @@ export const meta = {
 export const about = {
   text: [
     "Hello. My name is Josiah Brown and I am a front-end web developer.",
-    "Only after obtaining a degree in Electrical and Computer Engineering did I realized that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess engine, a mobile cipher app for rebels in Southeast Asia, and of course, web development.",
-    "I love to learn. When I am not scouring stack overflow for solutions to bugs, you will likely find me playing Spikeball, traveling the world, or watching Fresh Prince of Bel Air. Checkout my resume or reach out to me via the contact page if you would like to connect!",
+    "Only after obtaining a degree in Electrical and Computer Engineering did I realized that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess game, a mobile cipher app for soldiers in Southeast Asia, and of course, web development.",
+    "I love to learn. When I am not scouring stack overflow for solutions to bugs, you will likely find me playing Spikeball, traveling the world, or watching Fresh Prince of Bel-Air. Checkout my resume or reach out to me via the contact page if you would like to connect!",
   ],
   logos: [
     <FaReact key="FaReact" />,

@@ -6,7 +6,7 @@ import AboutSnippet from "../../components/about_snippet/AboutSnippet";
 import { meta } from "../../data/siteContent";
 import { about } from "../../data/siteContent";
 import { FiArrowUpRight } from "react-icons/fi";
-import RESUME from "../../assets/project-1.png";
+import RESUME from "../../josiah_brown_resume.pdf";
 
 const About = () => {
   return (
@@ -27,10 +27,10 @@ const About = () => {
         >
           <a
             href={RESUME}
-            download={"resume.png"}
+            download={"josiah_brown_resume.pdf"}
             className="bg-black dark:bg-white text-white dark:text-neutral-800 p-2 mr-auto md:text-xl lg:text-2xl xl:text-3xl"
           >
-            DOWNLOAD RESUME <FiArrowUpRight className="inline text-xl" />
+            DOWNLOAD RESUME <FiArrowUpRight className="inline" />
           </a>
           <div className="about_text w-full font-light text-sm md:text-lg lg:text-xl flex flex-col space-y-4 leading-6 tracking-wide">
             {about.text.map((p, i) => {

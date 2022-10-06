@@ -24,13 +24,12 @@ const Contact = () => {
         >
           <p>
             I am currently searching for a full-time job in front-end
-            development. As a result, it is unlikely that I can accomodate
-            freelance requests at this time.
+            development. As a result, I have less time for freelance work but am
+            happy to consider all opportunities!
           </p>
           <p>
-            That being said, I'm still willing to consider freelance jobs in the
-            off chance that I can take on your project. Or you could just send
-            me an email telling me about how your day is going :)
+            Or you could just send me an email telling me about how your day is
+            going :)
           </p>
           <p>josiah.webdev@gmail.com</p>
           <a
