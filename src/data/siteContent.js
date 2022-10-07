@@ -145,7 +145,7 @@ export const meta = {
 export const about = {
   text: [
     "Hello. My name is Josiah Brown and I am a front-end web developer.",
-    "Only after obtaining a degree in Electrical and Computer Engineering did I realized that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess game, a mobile cipher app for soldiers in Southeast Asia, and of course, web development.",
+    "Only after obtaining a degree in Electrical and Computer Engineering did I realize that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess game, a mobile cipher app for soldiers in Southeast Asia, and of course, web development.",
     "I love to learn. When I am not scouring stack overflow for solutions to bugs, you will likely find me playing Spikeball, traveling the world, or watching Fresh Prince of Bel-Air. Checkout my resume or reach out to me via the contact page if you would like to connect!",
   ],
   logos: [
