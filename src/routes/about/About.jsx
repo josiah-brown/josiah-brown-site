@@ -6,7 +6,7 @@ import AboutSnippet from "../../components/about_snippet/AboutSnippet";
 import { meta } from "../../data/siteContent";
 import { about } from "../../data/siteContent";
 import { FiArrowUpRight } from "react-icons/fi";
-import RESUME from "../../josiah_brown_resume.pdf";
+import RESUME from "../../Josiah_Brown_Resume.pdf";
 
 const About = () => {
   return (
