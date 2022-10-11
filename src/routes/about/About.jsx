@@ -6,7 +6,7 @@ import AboutSnippet from "../../components/about_snippet/AboutSnippet";
 import { meta } from "../../data/siteContent";
 import { about } from "../../data/siteContent";
 import { FiArrowUpRight } from "react-icons/fi";
-import RESUME from "../../Josiah_Brown_Resume.pdf";
+import RESUME from "../../josiah_brown_resume.pdf";
 
 const About = () => {
   return (
@@ -27,7 +27,7 @@ const About = () => {
         >
           <a
             href={RESUME}
-            download={"Josiah_Brown_Resume.pdf"}
+            download={"josiah_brown_resume.pdf"}
             className="bg-black dark:bg-white text-white dark:text-neutral-800 p-2 mr-auto md:text-xl lg:text-2xl xl:text-3xl"
           >
             DOWNLOAD RESUME <FiArrowUpRight className="inline" />
