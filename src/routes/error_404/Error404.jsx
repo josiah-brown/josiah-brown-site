@@ -1,10 +1,14 @@
 import React from "react";
 import PageContainer from "../../components/page_container/PageContainer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Error404 = () => {
   return (
     <PageContainer>
+      <Helmet>
+        <title>Error - 404</title>
+      </Helmet>
       <h1 className="w-full text-center my-24">
         This page has not been built yet.
       </h1>
