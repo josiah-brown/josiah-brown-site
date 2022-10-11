@@ -27,7 +27,7 @@ const About = () => {
         >
           <a
             href={RESUME}
-            download={"josiah_brown_resume.pdf"}
+            download={"Josiah_Brown_Resume.pdf"}
             className="bg-black dark:bg-white text-white dark:text-neutral-800 p-2 mr-auto md:text-xl lg:text-2xl xl:text-3xl"
           >
             DOWNLOAD RESUME <FiArrowUpRight className="inline" />
