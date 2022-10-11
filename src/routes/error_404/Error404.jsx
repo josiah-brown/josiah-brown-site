@@ -10,7 +10,7 @@ const Error404 = () => {
         <title>Error - 404</title>
       </Helmet>
       <h1 className="w-full text-center my-24">
-        This page has not been built yet.
+        Looks like you found a non-existent page...
       </h1>
       <Link
         to={"/"}
