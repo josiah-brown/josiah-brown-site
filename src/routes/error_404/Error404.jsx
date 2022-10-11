@@ -14,6 +14,7 @@ const Error404 = () => {
       </h1>
       <Link
         to={"/"}
+        rel="canonical"
         className="block w-1/3 mx-auto mt-4 text-center border-2 border-black p-4 hover:pointer hover:bg-black hover:text-white"
       >
         Return Home

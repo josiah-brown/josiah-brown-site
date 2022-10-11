@@ -13,7 +13,7 @@ const AboutSnippet = ({ heading, content, url }) => {
       className="fixed z-50 left-5 md:left-20 lg:left-28 xl:left-40 top-6 flex flex-col md:top-12 text-black dark:text-white"
     >
       <h1 className="text-2xl font-semibold w-full md:text-5xl">
-        <Link to="/" className="cursor-pointer">
+        <Link to="/" className="cursor-pointer" rel="canonical">
           {head}
         </Link>
       </h1>
