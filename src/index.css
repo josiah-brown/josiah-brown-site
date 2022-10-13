@@ -25,3 +25,17 @@ body {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
+
+.opacity_fade_in {
+  animation: 1s ease-in 0s 1 opacityAnimation;
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
