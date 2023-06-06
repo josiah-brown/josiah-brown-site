@@ -34,7 +34,7 @@ const Socials = () => {
         <span className="hidden md:block md:absolute md:duration-200 md:delay-[300ms] md:bg-black dark:md:bg-white md:w-[2px] md:h-0 md:bottom-0 md:left-0 md:group-hover:h-8"></span>
       </a>
       <a
-        href="https://www.instagram.com/eclipse_generative_art/"
+        href="https://www.instagram.com/josiah___brown/"
         target="_blank"
         rel="noreferrer"
         className="md:w-8 md:h-8 group overflow-hidden relative"

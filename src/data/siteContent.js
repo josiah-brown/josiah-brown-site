@@ -69,19 +69,35 @@ export const projects = [
   },
   {
     id: 3,
-    title: "The Library Loft",
-    link: "https://thelibraryloft.com",
-    infoUrl: "/projects/the-libary-loft",
+    title: "Simple Cinema",
+    link: "",
+    infoUrl: "/projects/simple-cinema",
     github: "",
-    skills: ["WordPress", "Design", "Domain Management", "SEO"],
-    overview: ["A WordPress blog built for a family member."],
+    skills: ["React Native", "Design", "Firebase", "System Design"],
+    overview: ["A beautifully simple movie tracking app."],
     process: [
-      "Though React apps are more fun, a family member needed a quick site built so I decided I might as well learn WordPress.",
-      "I am waiting on content for the site and also learning SEO to increase search rankings. This is very much still a work in progess.",
+      "I watch a lot of movies.",
+      "Naturally, I wanted a way to track all of the movies I have seen, but I was not happy with the options available. Too many ads, too cluttered, and not simple.",
+      "Simple Cinema is my solution. Because I work fulltime, this app only gets attention after 5pm and on weekends. It's built with React Native, Firebase, and data from TMDB. It has also been an incredible exercise in design as I've used Figma to mockup the entire app. Check in again soon to see if it's live on the App Store!",
     ],
     photo: IMG3,
     photo_lg: IMG3_LG,
   },
+  // {
+  //   id: 3,
+  //   title: "The Library Loft",
+  //   link: "https://thelibraryloft.com",
+  //   infoUrl: "/projects/the-libary-loft",
+  //   github: "",
+  //   skills: ["WordPress", "Design", "Domain Management", "SEO"],
+  //   overview: ["A WordPress blog built for a family member."],
+  //   process: [
+  //     "Though React apps are more fun, a family member needed a quick site built so I decided I might as well learn WordPress.",
+  //     "I am waiting on content for the site and also learning SEO to increase search rankings. This is very much still a work in progess.",
+  //   ],
+  //   photo: IMG3,
+  //   photo_lg: IMG3_LG,
+  // },
   {
     id: 4,
     title: "Diploma Generator App",
@@ -139,14 +155,14 @@ export const projects = [
 export const meta = {
   title: "Josiah Brown",
   content:
-    "Front End Developer and Designer specializing in ReactJS. Always learning something new.",
+    "Front End Developer and Designer specializing in React. Always learning something new.",
 };
 
 export const about = {
   text: [
     "Hello. My name is Josiah Brown and I am a front-end web developer.",
-    "Only after obtaining a degree in Electrical and Computer Engineering did I realize that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess game, a mobile cipher app for soldiers in Southeast Asia, and of course, web development.",
-    "I love to learn. When I am not scouring stack overflow for solutions to bugs, you will likely find me playing Spikeball, traveling the world, or watching Fresh Prince of Bel-Air. Checkout my resume or reach out to me via the contact page if you would like to connect!",
+    "Only after obtaining a degree in Electrical and Computer Engineering did I realize that software (not hardware) was my passion. Oh well. Ever since, I have been writing code in some form or fashion. Generative art, a chess game, a mobile cipher app for rebels in Southeast Asia, and most recently a movie tracking mobile app.",
+    "I love to learn. When I am not on stack overflow, you will likely find me jumping out of planes, riding my bike, or planning a trip. Check out my resume or reach out to me via the contact page if you would like to connect!",
   ],
   logos: [
     <FaReact key="FaReact" />,

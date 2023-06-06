@@ -23,9 +23,9 @@ const Contact = () => {
           className="w-2/3 md:w-full font-light text-sm md:text-xl lg:text-xl flex flex-col space-y-4 md:space-y-8 leading-6 tracking-wide"
         >
           <p>
-            I am currently searching for a full-time job in front-end
-            development. As a result, I have less time for freelance work but am
-            happy to consider all opportunities!
+            I am currently working full-time as a frontend developer. As a
+            result, I have less time for freelance/collaboration but am happy to
+            consider all opportunities!
           </p>
           <p>
             Or you could just send me an email telling me about how your day is

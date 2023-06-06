@@ -31,7 +31,7 @@ const Footer = () => {
           <AiFillGithub className="text-lg md:text-3xl dark:text-white md:w-8 md:h-8 md:hover:text-neutral-500" />
         </a>
         <a
-          href="https://www.instagram.com/eclipse_generative_art/"
+          href="https://www.instagram.com/josiah___brown/"
           target="_blank"
           rel="noreferrer"
           className="md:w-8 md:h-8"
