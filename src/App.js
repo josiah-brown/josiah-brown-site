@@ -5,6 +5,8 @@ import ProjectInfo from "./routes/project_info/ProjectInfo";
 import About from "./routes/about/About";
 import Contact from "./routes/contact/Contact";
 import Error404 from "./routes/error_404/Error404";
+import LinkdTermsAndConditions from "./routes/linkd/LinkdTermsAndConditions";
+import LinkdPrivacyPolicy from "./routes/linkd/LinkdPrivacyPolicy";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Route path="/projects/:project" element={<ProjectInfo />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/linkd-terms-and-conditions" element={<LinkdTermsAndConditions />} />
+          <Route path="/linkd-privacy-policy" element={<LinkdPrivacyPolicy />} />
           <Route path="/art" element={<Error404 />} />
           <Route path="/blog" element={<Error404 />} />
           <Route path="*" element={<Error404 />} />
