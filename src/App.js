@@ -22,7 +22,8 @@ export default function App() {
           <Route path="/linkd-privacy-policy" element={<LinkdPrivacyPolicy />} />
           <Route path="/art" element={<Error404 />} />
           <Route path="/blog" element={<Error404 />} />
-          <Route path="*" element={<Error404 />} />
+          <Route path="/linkd-privacy-policy" element={<LinkdPrivacyPolicy />} />
+          <Route path="/linkd-terms-and-conditions" element={<LinkdTermsAndConditions />} />
         </Routes>
       </Router>
     </div>
