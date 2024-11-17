@@ -155,7 +155,7 @@ export const projects = [
 export const meta = {
   title: "Josiah Brown",
   content:
-    "Front End Developer and Designer specializing in React. Always learning something new.",
+    "Full-Stack Web Developer. Always learning something new.",
 };
 
 export const about = {
