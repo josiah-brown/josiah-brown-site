@@ -1,8 +1,13 @@
 import React from "react";
 
 const LinkdPrivacyPolicy = () => {
+
+  const white = {
+    background: '#fff'
+  }
+
   return (
-    <div>
+    <div style={white}>
       <h1>Privacy Policy</h1>
       <p>Last updated: November 17, 2024</p>
       <p>

@@ -3,7 +3,7 @@ import React from "react";
 const LinkdTermsAndConditions = () => {
 
     const innerHTML = `
-        <div data-custom-class="body">
+        <div data-custom-class="body" style="background: #fff !important;">
       <div align="center" style="text-align: left;">
         <div
           class="MsoNormal"
